@@ -26,10 +26,10 @@ export default function Home() {
         </Link>
         <nav aria-label="Navegación principal" style={{ display: "flex", gap: "2rem" }}>
           {[
-            { label: "Inicio", href: "/" },
-            { label: "Menú", href: "/menu" },
-            { label: "Nosotros", href: "/nosotros" },
-            { label: "Reservas", href: "/reservas" },
+            { label: "Inicio", href: "#" },
+            { label: "Menú", href: "#menu" },
+            { label: "Nosotros", href: "#features" },
+            { label: "Reservas", href: "#reservas" },
           ].map(({ label, href }) => (
             <Link key={label} href={href} style={{
               color: "#ccc",
@@ -62,7 +62,7 @@ export default function Home() {
         <p style={{ color: "#ccc", fontSize: "1.1rem", maxWidth: "500px", margin: "0 auto 2.5rem" }}>
           Sabores tradicionales de Italia, preparados con ingredientes frescos y mucho amor. Bienvenido a La Bella Tavola.
         </p>
-        <Link href="/reservas" style={{
+        <Link href="#reservas" style={{
           display: "inline-block",
           background: "#d4a853",
           color: "#1a1a1a",
@@ -78,7 +78,7 @@ export default function Home() {
       </section>
 
       {/* FEATURES */}
-      <section aria-labelledby="features-heading" style={{ padding: "5rem 2rem", textAlign: "center", background: "#fff" }}>
+      <section id="features" aria-labelledby="features-heading" style={{ padding: "5rem 2rem", textAlign: "center", background: "#fff" }}>
         <p style={{ color: "#d4a853", letterSpacing: "3px", fontSize: "0.8rem", marginBottom: "0.5rem" }}>POR QUÉ ELEGIRNOS</p>
         <h2 id="features-heading" style={{ fontSize: "2rem", marginBottom: "3rem" }}>Lo mejor de cada plato</h2>
         <div style={{ display: "flex", justifyContent: "center", gap: "3rem", flexWrap: "wrap" }}>
@@ -97,7 +97,7 @@ export default function Home() {
       </section>
 
       {/* MENU HIGHLIGHT */}
-      <section aria-labelledby="menu-heading" style={{ padding: "5rem 2rem", background: "#faf8f5", textAlign: "center" }}>
+      <section id="menu" aria-labelledby="menu-heading" style={{ padding: "5rem 2rem", background: "#faf8f5", textAlign: "center" }}>
         <p style={{ color: "#d4a853", letterSpacing: "3px", fontSize: "0.8rem", marginBottom: "0.5rem" }}>NUESTROS PLATOS</p>
         <h2 id="menu-heading" style={{ fontSize: "2rem", marginBottom: "3rem" }}>Destacados del menú</h2>
         <div style={{ display: "flex", justifyContent: "center", gap: "2rem", flexWrap: "wrap" }}>
@@ -120,7 +120,7 @@ export default function Home() {
             </article>
           ))}
         </div>
-        <Link href="/menu" style={{
+        <Link href="#menu" style={{
           display: "inline-block",
           marginTop: "3rem",
           border: "2px solid #2c2c2c",
@@ -137,7 +137,7 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section aria-labelledby="cta-heading" style={{
+      <section id="reservas" aria-labelledby="cta-heading" style={{
         background: "#1a1a1a",
         color: "#fff",
         textAlign: "center",
